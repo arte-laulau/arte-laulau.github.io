@@ -10,6 +10,7 @@ input, textarea{
 	border: none;
 	color: $color2; 
 	display: block;	
+	font-family: $bodyFont;
 	margin: 0 auto 10px;
 	padding: 10px 10px;
 	width: 90%;
@@ -17,12 +18,4 @@ input, textarea{
 
 textarea{
 	height: 180px;
-}
-
-.submit{
-	background: $color2;
-	border-radius: 5px;
-	color: $color1;
-	padding: 10px 20px;
-    width: 100px;
 }

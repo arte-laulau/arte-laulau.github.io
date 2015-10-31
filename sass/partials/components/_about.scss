@@ -1,0 +1,25 @@
+.about-info{
+	margin-bottom: 30px;
+	padding: 0 10px;
+	width: 100%;
+	
+	@media (min-width: 640px) {
+		float: right;
+		margin-top: 80px;
+		width: 50%;
+	}
+}
+
+.img-about{
+	display: none;
+	@media (min-width: 640px) {
+		display: inline-block;
+		width: 50%;
+
+		img{
+			heigth: auto;
+			width: 100%;
+		}
+	}
+	
+}

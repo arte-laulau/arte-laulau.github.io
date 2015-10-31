@@ -15,5 +15,27 @@ header{
 }
 
 .content-header{
-	margin-top: 22%;
+	margin: 60% 0;
+	padding: 0 10px;
+	text-align: center;
+	
+	@media (min-width: 640px) {
+		margin: 50% 0;
+	}
+
+	@media (min-width: 740px) {
+		margin: 42% 0;
+	}
+
+	@media (min-width: 1024px) {
+		margin: 23% auto;
+	}
+
+	h1{
+		@include font-size(70);
+	}
+
+	h2{
+		@include font-size(50);
+	}
 }
