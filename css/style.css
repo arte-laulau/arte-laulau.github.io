@@ -1,0 +1,174 @@
+/* =========== Fonts =========== */
+@font-face {
+  font-family: 'besom';
+  src: url("../font/besom-webfont.eot");
+  src: url("../font/besom-webfont.eot?#iefix") format("embedded-opentype"), url("../font/besom-webfont.ttf") format("truetype"), url("../font/besom-webfont.woff") format("woff"), url("../font/besom-webfont.woff2") format("woff2"), url("../font/besom-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body, html {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "besom", Arial, sans-serif bold;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 80px;
+  font-size: 8rem; }
+
+h2 {
+  font-size: 60px;
+  font-size: 6rem; }
+
+h3 {
+  font-size: 48px;
+  font-size: 4.8rem; }
+
+h4 {
+  font-size: 32px;
+  font-size: 3.2rem; }
+
+h5 {
+  font-size: 24px;
+  font-size: 2.4rem; }
+
+h6 {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+ul li {
+  list-style: none;
+  margin: 0; }
+
+section {
+  padding: 70px 0; }
+
+.logo {
+  background: url(../img/logo.png) center no-repeat;
+  background-size: 100% auto;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-indent: -9999px; }
+
+.max-content {
+  margin: 0 auto;
+  max-width: 1000px;
+  overflow: hidden; }
+
+.section-title {
+  color: #43A6B9;
+  text-align: center; }
+
+.events .section-title, .contact .section-title {
+  color: #fff; }
+
+header {
+  background: url(../img/img-home/img-header.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%; }
+
+.top-header {
+  background: #D86D32;
+  height: 70px;
+  padding: 5px 10px;
+  position: fixed;
+  width: 100%; }
+
+.content-header {
+  margin-top: 22%; }
+
+nav ul li a {
+  color: #fff; }
+  nav ul li a:hover {
+    border-bottom: 1px solid; }
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; }
+
+nav ul li:last-child {
+  margin-right: 0; }
+
+.main-nav {
+  font-size: 18px;
+  font-size: 1.8rem;
+  float: right;
+  margin: 20px 0 0;
+  text-align: right; }
+  .main-nav li {
+    display: none; }
+    @media (min-width: 740px) {
+      .main-nav li {
+        display: inline-block; } }
+  .main-nav li a {
+    font-weight: bold; }
+
+.menu-toggle {
+  color: #fff;
+  width: 18px; }
+
+@media (min-width: 680px) {
+  .menu-toggle {
+    display: none; } }
+.extended {
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .extended li {
+    display: block; }
+
+.contact {
+  background: url(../img/img-home/img-contact.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden; }
+
+input, textarea {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #D86D32;
+  display: block;
+  margin: 0 auto 10px;
+  padding: 10px 10px;
+  width: 90%; }
+
+textarea {
+  height: 180px; }
+
+.submit {
+  background: #D86D32;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  width: 100px; }
+
+footer {
+  background: #43A6B9;
+  overflow: hidden; }
+  footer .copyright, footer .sm-icons {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%; }
+  footer .logo-footer {
+    height: 40px;
+    width: 40px; }
+
+/*# sourceMappingURL=style.css.map */

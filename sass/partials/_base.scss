@@ -1,0 +1,98 @@
+/* =========== Fonts =========== */
+@font-face {
+    font-family: 'besom';
+    src: url('../font/besom-webfont.eot');
+    src: url('../font/besom-webfont.eot?#iefix') format('embedded-opentype'),
+    	 url('../font/besom-webfont.ttf') format('truetype'),
+    	 url('../font/besom-webfont.woff') format('woff'),
+    	 url('../font/besom-webfont.woff2') format('woff2'),
+         url('../font/besom-webfont.svg') format('svg');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, html{
+	box-sizing:border-box;
+	color: $color1;
+	font-family: $mainFont;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	@include font-size(80);
+}
+
+h2{
+	@include font-size(60);
+}
+
+h3{
+	@include font-size(48);
+}
+
+h4{
+	@include font-size(32);
+}
+
+h5{
+	@include font-size(24);
+}
+
+h6{
+	@include font-size(16);
+}
+
+ul li {
+	list-style: none;
+	margin: 0;
+}
+
+section{
+	padding: 70px 0;
+}
+
+.logo {
+	background: url(../img/logo.png) center no-repeat;
+	background-size: 100% auto;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	text-indent: -9999px;
+}
+.max-content{
+	margin: 0 auto;
+	max-width: $max-width;
+	overflow: hidden;
+}
+
+.section-title{
+	color: $color3;
+	text-align: center;	
+}
+
+.events, .contact {
+	.section-title{
+		color: $color1;
+	}
+}

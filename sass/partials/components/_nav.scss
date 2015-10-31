@@ -1,0 +1,61 @@
+// 
+// Navigation
+//
+nav ul li a {
+	color: $color1;
+ 
+  &:hover {
+	  border-bottom: 1px solid;
+  }
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px
+}
+
+
+nav ul li:last-child{
+  margin-right: 0;
+}
+
+.main-nav {
+	@include font-size(18);
+  float: right;
+	margin: 20px 0 0;
+  text-align: right;
+
+  li{
+    display: none;  
+
+    @media (min-width: 740px) {
+      display: inline-block;
+    }
+  }
+  
+  li a{
+    font-weight: bold;
+  }
+}
+
+.menu-toggle{ 
+  color: $color1;
+  width: 18px;
+}
+
+@media (min-width: 680px) {
+  .menu-toggle{
+    display:none;
+  }
+}
+
+.extended{
+  -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  li{
+    display: block;
+
+  }
+}

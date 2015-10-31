@@ -1,0 +1,19 @@
+header{
+	background: url(../img/img-home/img-header.jpg) no-repeat center;
+	background-attachment: fixed;
+ 	background-size: cover;
+	overflow: hidden;
+	width: 100%;
+}
+
+.top-header{
+	background: $color2;
+	height: 70px;
+	padding: 5px 10px;
+	position: fixed;
+	width: 100%;	
+}
+
+.content-header{
+	margin-top: 22%;
+}

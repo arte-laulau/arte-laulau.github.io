@@ -1,0 +1,13 @@
+footer{
+	background: $color3;
+	overflow: hidden;
+	.copyright, .sm-icons{
+		display: inline-block; 
+		vertical-align: top;
+		width: 33%; 
+	}
+	.logo-footer{
+		height: 40px;
+		width: 40px;
+	}
+}

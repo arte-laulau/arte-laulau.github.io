@@ -1,0 +1,28 @@
+.contact{
+	background: url(../img/img-home/img-contact.jpg) no-repeat center;
+ 	background-size: cover;
+	width: 100%;
+	overflow: hidden;
+}
+
+input, textarea{
+	background: rgba(255, 255, 255, 0.8);
+	border: none;
+	color: $color2; 
+	display: block;	
+	margin: 0 auto 10px;
+	padding: 10px 10px;
+	width: 90%;
+}
+
+textarea{
+	height: 180px;
+}
+
+.submit{
+	background: $color2;
+	border-radius: 5px;
+	color: $color1;
+	padding: 10px 20px;
+    width: 100px;
+}
