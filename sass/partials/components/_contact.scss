@@ -8,14 +8,32 @@
 input, textarea{
 	background: rgba(255, 255, 255, 0.8);
 	border: none;
+	border-radius: 6px;
 	color: $color2; 
 	display: block;	
+	@include font-size(14);
 	font-family: $bodyFont;
 	margin: 0 auto 10px;
 	padding: 10px 10px;
 	width: 90%;
+
+	@media (min-width: 640px) {
+		@include font-size(16);
+	}		
+
+	@media (min-width: 740px) {
+		width: 70%;
+	}
+
+	@media (min-width: 1000px) {
+		width: 60%;
+	}	
 }
 
 textarea{
 	height: 180px;
+}
+
+.submit{
+	margin-top: 30px;
 }

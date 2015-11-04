@@ -1,11 +1,22 @@
 footer{
 	background: $color3;
 	overflow: hidden;
+	padding: 15px 10px;
+
 	.copyright, .sm-icons{
+		color: $color1;
 		display: inline-block; 
+		@include font-size(10);
+		line-height: 15px;
+		margin: 0;
 		vertical-align: top;
 		width: 33%; 
+
+		@media (min-width: 640px) {
+			@include font-size(12);
+		}
 	}
+
 	.logo-footer{
 		height: 40px;
 		width: 40px;

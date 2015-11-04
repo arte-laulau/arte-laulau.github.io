@@ -2,8 +2,7 @@
   var width;
   var height;
   var largeHeader = document.getElementById('header-home');
-  var largeContact = document.getElementById('contact');
-
+  
 	// Resize window header-home
   initHeader();
 
@@ -11,13 +10,13 @@
     width = window.innerWidth;
     height = window.innerHeight;
     largeHeader.style.height = height+'px';
-    largeContact.style.height = height+'px';
   }
 
 })();
 
 //MENU TOGGLE
-$("#menu-toggle").click(function(){
-	$("#main-nav ul").toggleClass("extended");
+$(".menu-toggle").on('click', function() {
+  $(this).toggleClass("on");
+  $("#main-nav").toggleClass('overlay');
+  $("#main-nav ul").toggleClass('extended');
 });
-

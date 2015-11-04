@@ -20,10 +20,17 @@ nav ul li:last-child{
 }
 
 .main-nav {
-	@include font-size(18);
+	@include font-size(40);
   float: right;
-	margin: 20px 0 0;
-  text-align: right;
+  line-height: 80px;
+	margin: 5px 0;
+  text-align: center; 
+
+  @media (min-width: 740px) {
+    @include font-size(22);
+    line-height: normal;
+    margin: 20px 0;
+  }
 
   ul{
     @media (min-width: 740px) {
@@ -44,15 +51,55 @@ nav ul li:last-child{
   }
 }
 
-.menu-toggle{ 
-  color: $color1;
-  width: 18px;
+.menu-collapse{
+  float: right;
+  overflow: hidden;
+  margin: 5px 10px;
 }
 
-@media (min-width: 680px) {
-  .menu-toggle{
-    display:none;
-  }
+.menu-toggle {
+  width: 40px;
+  height: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+  @media (min-width: 740px) {
+    .menu-toggle{
+      display:none;
+    }
+}
+
+.menu-toggle.on .one {
+  -moz-transform: rotate(45deg) translate(7px, 7px);
+  -ms-transform: rotate(45deg) translate(7px, 7px);
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-toggle.on .two {
+  opacity: 0;
+}
+
+.menu-toggle.on .three {
+  -moz-transform: rotate(-45deg) translate(8px, -10px);
+  -ms-transform: rotate(-45deg) translate(8px, -10px);
+  -webkit-transform: rotate(-45deg) translate(8px, -10px);
+  transform: rotate(-45deg) translate(8px, -10px);
+}
+
+.one,
+.two,
+.three {
+  background: $color1;
+  backface-visibility: hidden;
+  border-radius: 2px;
+  height: 5px;
+  margin: 6px 0;  
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  width: 100%;
 }
 
 .extended{
@@ -64,4 +111,14 @@ nav ul li:last-child{
     display: block;
 
   }
+}
+
+.overlay{
+    background: $color3;
+    height: 100%;
+    left: 0;
+    padding: 10px;
+    top: 0;
+    width: 100%;
+    z-index: 15;
 }

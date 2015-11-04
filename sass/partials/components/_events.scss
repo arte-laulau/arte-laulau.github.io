@@ -1,24 +1,34 @@
 .events{
+	background-color: $color2;
+	padding-bottom: 0;
+
 	@media (min-width: 640px) {
 		background: url(../img/img-home/img-events.jpg) no-repeat center;
 		-webkit-background-size: cover;
 		background-size: cover;
+		padding-bottom: 60px;
 	}
 	
+	@media (min-width: 740px) {
+		height: 550px;
+	}
 }
 
 .event{
 	background: rgba(216, 109, 60, 0.95);
-	margin-bottom: 2px;
+	border-top: 1px solid $color1;
     padding: 40px 20px;
 	width: 100%;
 	
 	@media (min-width:640px) {
+		border-top: 0;
 		display: inline-block;
-		width: 50%;
+		margin-bottom: 3px;
+		width: 49.7%;
 	}
 
 	@media (min-width: 740px) {
+		height: 280px;
 		width: 33%;
 	}
 
@@ -29,4 +39,5 @@
 
 .event-info p{
 	color: $color1;
+	line-height: 20px;
 }
