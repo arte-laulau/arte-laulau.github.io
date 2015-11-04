@@ -14,9 +14,37 @@
 
 })();
 
-//MENU TOGGLE
-$(".menu-toggle").on('click', function() {
-  $(this).toggleClass("on");
-  $("#main-nav").toggleClass('overlay');
-  $("#main-nav ul").toggleClass('extended');
-});
+
+/**
+  *Funcionalidades en jQuery, menu, galería
+
+**/
+
+(function(){
+
+  //MENU TOGGLE
+  function menuToggle(){
+    $('.menu-toggle').on('click', function() {
+      $(this).toggleClass("on");
+      $('#main-nav').toggleClass('overlay');
+      $('#main-nav ul').toggleClass('extended');
+    })
+  } 
+  
+  function closeMenu(){
+    $('#main-nav li').bind('click', function(){
+      $('.menu-toggle').toggleClass("on");
+      $('#main-nav').toggleClass('overlay');
+      $('#main-nav ul').toggleClass('extended');
+    })
+  }
+  
+
+  return{
+    menuToggle : menuToggle(),
+    closeMenu : closeMenu() 
+  }
+
+})();
+
+
