@@ -33,9 +33,9 @@
   
   function closeMenu(){
     $('#main-nav li').bind('click', function(){
-      $('.menu-toggle').toggleClass("on");
-      $('#main-nav').toggleClass('overlay');
-      $('#main-nav ul').toggleClass('extended');
+      $('.menu-toggle').removeClass("on");
+      $('#main-nav').removeClass('overlay');
+      $('#main-nav ul').removeClass('extended');
     })
   }
   
