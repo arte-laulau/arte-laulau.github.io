@@ -1,17 +1,21 @@
 header{
-	background: url(../img/img-home/img-header.jpg) no-repeat center;
-	background-attachment: fixed;
+	background: url(../img/img-home/img-header1.jpg) no-repeat;
  	background-size: cover;
 	overflow: hidden;
 	width: 100%;
+
+	@media (min-width: 600px) {
+		background-attachment: fixed;
+	}
 }
 
 .top-header{
-	background: $color2;
+	background: rgba(216,109,50,.95);
 	box-shadow: 0 1px 0 rgba(255,255,255, 0.3);
 	height: 70px;
 	position: fixed;
 	width: 100%;	
+	z-index: 2;
 }
 
 .content-header{
@@ -28,11 +32,15 @@ header{
 	}
 
 	@media (min-width: 1024px) {
-		margin: 23% auto;
+		margin: 25% auto;
+	}
+	
+	h1,h2{
+		color: $color3;
 	}
 
 	h1{
-		@include font-size(70);
+		@include font-size(100);
 	}
 
 	h2{

@@ -1,0 +1,87 @@
+{
+	"latest":[
+		{
+			"id":0,
+			"nameId":"conel",
+			"title":"Conel",
+			"imgWork":"img/works/ilustraciones/conel.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},				
+		{
+			"id":1,
+			"nameId":"david-paris",
+			"title":"David Paris",
+			"imgWork":"img/works/ilustraciones/david-paris.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},	
+		{
+			"id":2,
+			"nameId":"conel",
+			"title":"Conel",
+			"imgWork":"img/works/ilustraciones/conel.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},				
+		{
+			"id":3,
+			"nameId":"orgy",
+			"title":"Orgy",
+			"imgWork":"img/works/ilustraciones/orgy.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},				
+		{
+			"id":4,
+			"nameId":"peces",
+			"title":"Peces",
+			"imgWork":"img/works/ilustraciones/peces.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":5,
+			"nameId":"rosado",
+			"title":"Rosado",
+			"imgWork":"img/works/ilustraciones/rosado.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		}		
+	],
+
+	"allWorks":[
+		{
+			"id":0,
+			"nameId":"colibri",
+			"title":"colibri",
+			"imgWork":"img/works/ilustraciones/colibri.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},				
+		{
+			"id":1,
+			"nameId":"conel",
+			"title":"conel",
+			"imgWork":"img/works/ilustraciones/conel.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":2,
+			"nameId":"gaviota",
+			"title":"gaviota",
+			"imgWork":"img/works/ilustraciones/gaviota.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":3,
+			"nameId":"colibri",
+			"title":"colibri",
+			"imgWork":"img/works/ilustraciones/colibri.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		}
+	]
+}

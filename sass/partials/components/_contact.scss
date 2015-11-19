@@ -35,5 +35,14 @@ textarea{
 }
 
 .submit{
-	margin-top: 30px;
+	background: $color1;
+	color: $color2;
+	display: block;
+	margin: 0 auto;
+	
+	&:hover{
+		background: $color2;
+		border-color: $color2;	
+		color: $color1;
+	}
 }

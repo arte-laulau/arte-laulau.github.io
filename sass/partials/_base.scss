@@ -88,23 +88,9 @@ section{
 }
 
 .btn{
-	background: $color2;
-	border-radius: 10px;
-	color: $color1;
-	display: block;
-	@include font-size(14);
-	font-family: $bodyFont;
-	margin: 0 auto 30px;
-	padding: 10px 20px;
-	-webkit-transition: ease all .5s;
-	-o-transition: ease all .5s;
-	transition: ease all .5s;
-    width: 140px;
-
-    &:hover{
-    	background: $color1;
-    	color: $color2;
-    }
+	@include button(16);
+    @include transition-btn;
+    text-align: center;
 
     @media (min-width: 640px) {
 		@include font-size(16);
@@ -130,17 +116,26 @@ section{
 	max-width: $max-width;
 	overflow: hidden;
 }
-.read-more{
-	background: transparent;
+
+.see-more{
 	border: 1px solid $color2;
 	color: $color2;
+	
 	&:hover{
-    	background: $color2;
-    	color: $color1;
-    }
+		background: $color2;
+		color: $color1;
+	}
 }
+
+.latest-works{
+	.see-more{
+		display:block;
+		margin: 0 auto;
+	}
+}
+
 .section-title{
-	color: $color3;
+	color: $color2;
 	margin-bottom: 20px;
 	text-align: center;	
 

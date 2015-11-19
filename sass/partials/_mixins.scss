@@ -3,3 +3,32 @@
   font-size: $size + px;
   font-size: ($size / 10) + rem;
 }
+
+// Buttons
+@mixin button($font-size, $text-color: $color1, $background-color: transparent, $border-color: $color1, $transform: none) {
+  background: $background-color;
+  color: $text-color;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  font-family: $bodyFont;
+  padding: 10px 17px;
+  text-transform: $transform;
+  width: 180px;
+
+  &:hover{
+    background: $color1;
+    color: $color3;
+    text-decoration: none;
+  }
+}
+
+//Transitions
+@mixin transition-btn {
+  -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}

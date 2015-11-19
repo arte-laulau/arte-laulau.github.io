@@ -3,7 +3,7 @@
 	padding-bottom: 0;
 
 	@media (min-width: 640px) {
-		background: url(../img/img-home/img-events.jpg) no-repeat center;
+		background: url(../img/img-home/splash.jpg) no-repeat center;
 		-webkit-background-size: cover;
 		background-size: cover;
 		padding-bottom: 60px;
@@ -15,7 +15,7 @@
 }
 
 .event{
-	background: rgba(216, 109, 60, 0.95);
+	background: rgba(216, 109, 60, 0.55);
 	border-top: 1px solid $color1;
     padding: 40px 20px;
 	width: 100%;
