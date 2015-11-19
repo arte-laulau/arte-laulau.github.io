@@ -1,7 +1,11 @@
 (function() {
-
+  var closer = document.getElementById("closeProject");
   var latestWorks = document.getElementById("latestWorks");
-  
+  var works = document.getElementsByClassName("work-img");
+  var lightbox = document.getElementById("lightbox");
+  var lightboxContent = document.getElementById("lightboxContent");
+  var body = document.getElementById("body");
+
   /*var width;
   var height;
   var largeHeader = document.getElementById('header-home');
@@ -25,8 +29,8 @@
           if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
              if(xmlhttp.status == 200){
                 data = JSON.parse(xmlhttp.responseText);
-                showData(data);                
-                console.log(data);
+                showData(data);      
+                detailProject(data);          
              }
              else if(xmlhttp.status == 400) {
                 alert('There was an error 400')
@@ -53,6 +57,32 @@
     latestWorks.innerHTML = works;
   }
 
+  /*
+    **PRINT PROJECTS CONTENT LIGHBTOX
+  */
+  function detailProject(data){
+    for (var i = 0; i < works.length; i ++) {
+      works[i].onclick = function() {
+        currentWork = this.id;
+        console.log(currentWork);
+        lightboxContent.innerHTML = '<h2>'+data.latest[currentWork].title+'</h2><h4 class="category">'+data.latest[currentWork].category+'</h4><img class="img-project" src="'+data.latest[currentWork].imgWork+'"><h4>Descripción</h4><p>'+data.latest[currentWork].description+'</p>';
+        displayProject();        
+      }
+    }
+  }
+
+  /*
+    **CONTROLS SHOW AND CLOSE THE LIGHTBOX
+  */
+  function displayProject(){
+    lightbox.style.display = "block";
+    body.style.overflow = "hidden";
+
+    closer.onclick = function(){
+      lightbox.style.display = "none";
+      body.style.overflow = "auto";
+    }
+  }
 
 })();
 

@@ -370,12 +370,13 @@ nav ul li:last-child {
     display: inline-block;
     margin: 0 0 20px 0;
     text-align: left;
-    position: relative; }
+    position: relative;
+    width: 100%; }
   @media (min-width: 600px) {
     .works-grid li {
       padding: 20px;
       width: 49%; } }
-  @media (min-width: 900px) {
+  @media (min-width: 1024px) {
     .works-grid li {
       width: 32.33%; } }
 
@@ -387,6 +388,7 @@ nav ul li:last-child {
   .works-grid figure img {
     display: block;
     height: 100%;
+    margin: 0 auto;
     max-width: 100%;
     position: relative; }
 
@@ -523,14 +525,48 @@ footer {
     height: 40px;
     width: 40px; }
 
+.closeProject {
+  color: #D86D32;
+  cursor: pointer;
+  display: block;
+  font-size: 40px;
+  font-size: 4rem;
+  text-align: right; }
+  .closeProject:hover {
+    font-weight: bold; }
+
 .lightbox {
-  background: rgba(29, 29, 29, 0.97);
+  background: #fff;
+  color: #D86D32;
   display: none;
   height: 100%;
   left: 0;
-  padding: 10px;
+  padding: 10px 10px 60px;
+  position: fixed;
+  /* keeps the lightbox window in the current viewport */
   top: 0;
   width: 100%;
   z-index: 15; }
+
+.lightboxContent {
+  height: 100%;
+  padding: 10px 0 10px 0;
+  overflow: scroll; }
+  .lightboxContent img {
+    display: block;
+    margin: 15px auto 20px; }
+    @media (max-width: 900px) {
+      .lightboxContent img {
+        width: 100%; } }
+  .lightboxContent h4 {
+    color: #43A6B9; }
+  .lightboxContent p {
+    color: #D86D32; }
+
+.lightbox ::-webkit-scrollbar {
+  display: none; }
+
+.lightbox ::-webkit-scrollbar-thumb {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

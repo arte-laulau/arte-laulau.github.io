@@ -1,10 +1,55 @@
+.closeProject{
+  color: $color2;
+  cursor: pointer;
+  display: block;
+  @include font-size(40);
+  text-align: right;
+
+  &:hover{
+    font-weight: bold;
+  }
+}
+
 .lightbox{
-	background: rgba(29,29,29,.97);
-    display: none;
-    height: 100%;
-    left: 0;
-    padding: 10px;
-    top: 0;
-    width: 100%;
-    z-index: 15;
+	background: $color1;
+	color: $color2;
+	display: none;
+	height:100%;
+	left:0;
+	padding: 10px 10px 60px;
+	position:fixed; /* keeps the lightbox window in the current viewport */
+	top:0; 
+	width:100%; 
+	z-index: 15;
+}
+
+.lightboxContent {
+  height: 100%;
+  padding: 10px 0 10px 0;
+  overflow: scroll;
+
+  img{
+  	display: block;
+  	margin: 15px auto 20px;
+
+    @media (max-width:900px) {
+      width: 100%;
+    }
+  }
+
+  h4 {
+    color: $color3;
+  }
+
+  p{
+    color: $color2;
+  }
+}
+
+.lightbox ::-webkit-scrollbar{
+  display: none;
+}
+
+.lightbox ::-webkit-scrollbar-thumb{
+  display: none;
 }
