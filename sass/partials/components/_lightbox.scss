@@ -11,12 +11,12 @@
 }
 
 .lightbox{
-	background: $color1;
+	background: $color4;
 	color: $color2;
 	display: none;
 	height:100%;
 	left:0;
-	padding: 10px 10px 60px;
+	padding: 10px 10px;
 	position:fixed; /* keeps the lightbox window in the current viewport */
 	top:0; 
 	width:100%; 
@@ -31,9 +31,10 @@
   img{
   	display: block;
   	margin: 15px auto 20px;
+    width: 100%;
 
-    @media (max-width:900px) {
-      width: 100%;
+    @media (min-width:900px) {
+      width: 60%;
     }
   }
 
@@ -43,6 +44,7 @@
 
   p{
     color: $color2;
+    margin-bottom: 60px;
   }
 }
 
