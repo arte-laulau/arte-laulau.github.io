@@ -93,6 +93,8 @@ section {
   -o-transition: background 0.3s ease-in-out;
   -ms-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
+  font-size: 14px;
+  font-size: 1.4rem;
   text-align: center; }
   .btn:hover {
     background: #fff;
@@ -261,6 +263,8 @@ nav ul li:last-child {
 
 .extendedWorks {
   display: block; }
+  .extendedWorks body {
+    overflow: hidden; }
 
 /*
   **MENU COLLAPSE
@@ -344,7 +348,8 @@ nav ul li:last-child {
         font-size: 18px;
         font-size: 1.8rem; } }
   .about-info .see-more {
-    margin-top: 30px; }
+    display: block;
+    margin: 30px auto 0; }
 
 .img-about {
   display: none; }

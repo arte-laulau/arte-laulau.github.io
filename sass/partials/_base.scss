@@ -95,6 +95,7 @@ section{
 .btn{
 	@include button(16);
     @include transition-btn;
+    @include font-size(14);
     text-align: center;
 
     @media (min-width: 640px) {
