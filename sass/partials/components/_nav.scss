@@ -49,15 +49,20 @@ nav ul li:last-child{
     display: none; 
     padding: 10px 5px;
 
-    &:hover .drop-down{
-      display: block;
-     }
-
     @media (min-width: 740px) {
       display: inline-block;
     }
   }
+}
 
+/*
+  **DROP-DOWN WORKS
+*/
+.menu-works:after{
+  font-family: $mainFont;
+  @include font-size(14);
+  color: $color1;
+  content: '\25bc';
 }
 
 .drop-down{
@@ -88,6 +93,14 @@ nav ul li:last-child{
   }
 }
 
+.extendedWorks{
+    display: block;
+}
+
+
+/*
+  **MENU COLLAPSE
+*/
 .menu-collapse{
   float: right;
   overflow: hidden;

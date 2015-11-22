@@ -104,17 +104,25 @@
   } 
   
   function closeMenu(){
-    $('#main-nav li').bind('click', function(){
+    $('#main-nav li a').bind('click', function(){
       $('.menu-toggle').removeClass("on");
       $('#main-nav').removeClass('overlay');
       $('#main-nav ul').removeClass('extended');
     })
   }
-  
+
+  //allWorks TOGGLE
+   function togglemenuWorks(){
+    $('#menuWorks').on('click', function() {
+      console.log("perra");
+      $('.drop-down').toggleClass('extendedWorks');
+    })
+  } 
 
   return{
     menuToggle : menuToggle(),
-    closeMenu : closeMenu() 
+    closeMenu : closeMenu(),
+    togglemenuWorks: togglemenuWorks()
   }
 
 })();

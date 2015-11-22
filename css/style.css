@@ -224,11 +224,19 @@ nav ul li:last-child {
   .main-nav li {
     display: none;
     padding: 10px 5px; }
-    .main-nav li:hover .drop-down {
-      display: block; }
     @media (min-width: 740px) {
       .main-nav li {
         display: inline-block; } }
+
+/*
+  **DROP-DOWN WORKS
+*/
+.menu-works:after {
+  font-family: "besom", Arial, sans-serif bold;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #fff;
+  content: '\25bc'; }
 
 .drop-down {
   background: rgba(216, 109, 50, 0.9);
@@ -251,6 +259,12 @@ nav ul li:last-child {
     .drop-down li:hover a {
       text-decoration: none; }
 
+.extendedWorks {
+  display: block; }
+
+/*
+  **MENU COLLAPSE
+*/
 .menu-collapse {
   float: right;
   overflow: hidden;
