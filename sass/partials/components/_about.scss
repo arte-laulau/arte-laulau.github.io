@@ -1,9 +1,13 @@
-.about-info{
+.header-about {
+	background: none;
+}
+
+.about-info {
 	margin-bottom: 30px;
 	padding: 0 10px;
 	width: 100%;
 
-	p{
+	p {
 		color: $color3;
 	}
 	
@@ -18,27 +22,98 @@
 		margin-top: 9%;
 		width: 50%;
 
-		p{
+		p {
 			@include font-size(18);
 		}
 	}
 
-	.see-more{
+	.see-more {
 		display: block;
 		margin: 30px auto 0;
 	}
 }
 
-.img-about{
+.img-about {
 	display: none;
 	@media (min-width: 640px) {
 		display: inline-block;
 		width: 50%;
 
-		img{
+		img {
 			heigth: auto;
 			width: 100%;
 		}
 	}
-	
+}
+
+.stores {
+	ul li {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+		height: 200px;
+		overflow: auto;
+	    padding: 20px; 	
+		vertical-align: top;
+	    width:49%;
+	}
+
+	li img {
+		display: block;
+		heigth: 120px;
+		margin: 0 auto;
+		width: 120px;
+	}
+
+	@media (min-width:740px) {
+	    li {
+	      	width: 32.33%;
+
+	    }
+	}
+}
+
+.our-workflow {
+	padding-top: 0;
+}
+
+.what-we-do {
+	padding-top:120px;
+
+	img{
+		float: right;
+		width: 90%;
+	}
+}
+
+.img-what-we-do, .info-workflow {
+	float: right;
+}
+
+.img-workflow {
+	float: left;
+
+	img {
+		height: auto;
+		width: 90%;
+	}
+}
+
+.img-workflow, .img-what-we-do {
+    width: 50%;
+    overflow: hidden;	
+}
+
+.what-we-do, .our-workflow {
+	p {
+		color: $color3;
+	}
+
+	.info{
+		display: inline-block;
+		width: 47%;
+	}
 }

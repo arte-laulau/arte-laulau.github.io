@@ -71,8 +71,8 @@ p {
   margin-bottom: 20px; }
   @media (min-width: 640px) {
     p {
-      font-size: 16px;
-      font-size: 1.6rem; } }
+      font-size: 18px;
+      font-size: 1.8rem; } }
 
 section {
   padding: 80px 0; }
@@ -328,6 +328,9 @@ nav ul li:last-child {
   width: 100%;
   z-index: 15; }
 
+.header-about {
+  background: none; }
+
 .about-info {
   margin-bottom: 30px;
   padding: 0 10px;
@@ -360,6 +363,53 @@ nav ul li:last-child {
       .img-about img {
         heigth: auto;
         width: 100%; } }
+
+.stores ul li {
+  margin: 0;
+  padding: 0; }
+.stores li {
+  display: inline-block;
+  height: 200px;
+  overflow: auto;
+  padding: 20px;
+  vertical-align: top;
+  width: 49%; }
+.stores li img {
+  display: block;
+  heigth: 120px;
+  margin: 0 auto;
+  width: 120px; }
+@media (min-width: 740px) {
+  .stores li {
+    width: 32.33%; } }
+
+.our-workflow {
+  padding-top: 0; }
+
+.what-we-do {
+  padding-top: 120px; }
+  .what-we-do img {
+    float: right;
+    width: 90%; }
+
+.img-what-we-do, .info-workflow {
+  float: right; }
+
+.img-workflow {
+  float: left; }
+  .img-workflow img {
+    height: auto;
+    width: 90%; }
+
+.img-workflow, .img-what-we-do {
+  width: 50%;
+  overflow: hidden; }
+
+.what-we-do p, .our-workflow p {
+  color: #43A6B9; }
+.what-we-do .info, .our-workflow .info {
+  display: inline-block;
+  width: 47%; }
 
 .events {
   background-color: #D86D32;
