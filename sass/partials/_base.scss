@@ -22,7 +22,7 @@ html {
   box-sizing: inherit;
 }
 
-body, html{
+body, html {
 	box-sizing:border-box;
 	color: $color1;
 	font-family: $mainFont;
@@ -30,7 +30,7 @@ body, html{
 	padding: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -39,60 +39,66 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 }
 
-h1{
+h1 {
 	@include font-size(70);
 }
 
-h2{
+h2 {
 	@include font-size(50);
 }
 
-h3{
+h3 {
 	@include font-size(38);
 }
 
-h4{
+h4 {
 	@include font-size(24);
 	@media (min-width: 640px) {
 		@include font-size(28);
 	}
 }
 
-h5{
+h5 {
 	@include font-size(18);
 }
 
-h6{
+h6 {
 	@include font-size(12);
 }
 
-ul{
+ul {
 	margin: 0;
 	padding: 0;
 }
 
 ul li {
+	@include font-size(16);
 	list-style: none;
 	margin: 0;
-}
 
-p{
-	@include font-size(14);
-	color: $color2; 
-	font-family: $bodyFont;
 	line-height: 30px;
-	margin-bottom: 20px;
 
 	@media (min-width: 640px) {
 		@include font-size(18);
 	}
 }
 
-section{
+p {
+	@include font-size(16);
+	color: $color2; 
+	font-family: $bodyFont;
+	line-height: 30px;
+
+	@media (min-width: 640px) {
+		@include font-size(18);
+	}
+}
+
+section {
 	padding: 80px 0;
 }
 
-.btn{
+.btn {
 	@include button(16);
     @include transition-btn;
     @include font-size(14);
@@ -117,30 +123,30 @@ section{
 		margin-left: 0;
 	}
 }
-.max-content{
+.max-content {
 	margin: 0 auto;
 	max-width: $max-width;
 	overflow: hidden;
 }
 
-.see-more{
+.see-more {
 	border: 1px solid $color2;
 	color: $color2;
 	
-	&:hover{
+	&:hover {
 		background: $color2;
 		color: $color1;
 	}
 }
 
-.latest-works{
-	.see-more{
+.latest-works {
+	.see-more {
 		display:block;
 		margin: 0 auto;
 	}
 }
 
-.section-title{
+.section-title {
 	color: $color2;
 	margin-bottom: 20px;
 	text-align: center;	
@@ -155,7 +161,7 @@ section{
 }
 
 .events, .contact {
-	.section-title{
-		color: $color1;
+	.section-title {
+		color: $color3;
 	}
 }

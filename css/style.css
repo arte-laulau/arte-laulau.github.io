@@ -59,16 +59,22 @@ ul {
   padding: 0; }
 
 ul li {
+  font-size: 16px;
+  font-size: 1.6rem;
   list-style: none;
-  margin: 0; }
+  margin: 0;
+  line-height: 30px; }
+  @media (min-width: 640px) {
+    ul li {
+      font-size: 18px;
+      font-size: 1.8rem; } }
 
 p {
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   color: #D86D32;
   font-family: "Muli";
-  line-height: 30px;
-  margin-bottom: 20px; }
+  line-height: 30px; }
   @media (min-width: 640px) {
     p {
       font-size: 18px;
@@ -148,16 +154,13 @@ section {
       font-size: 6rem; } }
 
 .events .section-title, .contact .section-title {
-  color: #fff; }
+  color: #43A6B9; }
 
 header {
   background: url(../img/img-home/img-header1.jpg) no-repeat;
   background-size: cover;
   overflow: hidden;
   width: 100%; }
-  @media (min-width: 600px) {
-    header {
-      background-attachment: fixed; } }
 
 .top-header {
   background: rgba(216, 109, 50, 0.95);
@@ -191,6 +194,8 @@ header {
 
 nav ul li, li a {
   color: #fff;
+  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: normal;
   webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -241,13 +246,15 @@ nav ul li:last-child {
   content: '\25bc'; }
 
 .drop-down {
-  background: rgba(216, 109, 50, 0.9);
+  background: #D86D32;
+  border-bottom: 1px solid #D86D32;
+  border-right: 1px solid #D86D32;
   display: none;
   text-align: left;
   width: 100%; }
   @media (min-width: 740px) {
     .drop-down {
-      margin-top: 10px !important;
+      margin-top: 11px !important;
       position: absolute;
       width: 200px; } }
 
@@ -257,8 +264,10 @@ nav ul li:last-child {
   margin: 0;
   padding: 20px 15px; }
   .drop-down li:hover {
+    background: #fff;
     border-left: 5px solid #43A6B9; }
     .drop-down li:hover a {
+      color: #D86D32;
       text-decoration: none; }
 
 .extendedWorks {
@@ -412,26 +421,30 @@ nav ul li:last-child {
   width: 47%; }
 
 .events {
-  background-color: #D86D32;
+  background-color: #292929;
   padding-bottom: 0; }
   @media (min-width: 640px) {
     .events {
-      background: url(../img/img-home/splash.jpg) no-repeat center;
-      -webkit-background-size: cover;
-      background-size: cover;
       padding-bottom: 60px; } }
   @media (min-width: 740px) {
     .events {
       height: 550px; } }
 
 .event {
-  background: rgba(216, 109, 60, 0.55);
-  border-top: 1px solid #fff;
+  background: transparent;
+  border: 1px solid #D86D32;
+  color: #D86D32;
   padding: 40px 20px;
+  vertical-align: top;
   width: 100%; }
+  .event:first-child {
+    border-top: none; }
+    @media (min-width: 640px) {
+      .event:first-child {
+        border-top: 1px solid #D86D32; } }
   @media (min-width: 640px) {
     .event {
-      border-top: 0;
+      color: #fff;
       display: inline-block;
       margin-bottom: 3px;
       width: 49.7%; } }
@@ -563,17 +576,57 @@ figure:hover .bottom-to-top {
     display: inline-block;
     padding: 0px 15px; }
 
+.workshops h4 {
+  color: #D86D32;
+  margin-bottom: 15px; }
+.workshops li {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "Muli";
+  list-style: initial;
+  margin-left: 20px; }
+.workshops p {
+  margin: 0 0 15px; }
+.workshops p, .workshops li {
+  color: #43A6B9; }
+
+.workshop {
+  border-bottom: 1px solid #D86D32;
+  padding: 40px;
+  vertical-align: top; }
+  @media (min-width: 640px) {
+    .workshop {
+      border-bottom: none;
+      display: inline-block;
+      margin-bottom: 60px;
+      padding: 20px 20px;
+      width: 49.33%; }
+      .workshop:first-child, .workshop:nth-child(3) {
+        border-right: 1px solid #D86D32; } }
+
+.course-info {
+  margin-bottom: 30px; }
+  .course-info p:first-child, .course-info p:nth-child(3) {
+    font-weight: bold;
+    margin: 15px 0 0; }
+
 .contact {
-  background: url(../img/img-home/img-contact.jpg) no-repeat center;
-  background-size: cover;
+  background: #292929;
   width: 100%;
   overflow: hidden; }
 
+.face {
+  background: url(../img/face-logo.svg) no-repeat;
+  background-size: cover;
+  height: 50px;
+  text-indent: -9999px;
+  width: 50px; }
+
 input, textarea {
-  background: rgba(255, 255, 255, 0.8);
-  border: none;
+  background: transparent;
+  border: 1px solid #D86D32;
   border-radius: 6px;
-  color: #D86D32;
+  color: #fff;
   display: block;
   font-size: 14px;
   font-size: 1.4rem;
@@ -595,14 +648,26 @@ input, textarea {
 textarea {
   height: 180px; }
 
+.info-contact {
+  padding: 40px 0; }
+  .info-contact div {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 33%; }
+    .info-contact div:last-child {
+      vertical-align: top; }
+  .info-contact p {
+    color: #fff; }
+
 .submit {
-  background: #fff;
-  color: #D86D32;
+  background: transparent;
+  border: 1px solid #D86D32;
+  color: #fff;
   display: block;
   margin: 0 auto; }
   .submit:hover {
     background: #D86D32;
-    border-color: #D86D32;
     color: #fff; }
 
 footer {

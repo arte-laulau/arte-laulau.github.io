@@ -1,15 +1,22 @@
-.contact{
-	background: url(../img/img-home/img-contact.jpg) no-repeat center;
- 	background-size: cover;
+.contact {
+	background: #292929;
 	width: 100%;
 	overflow: hidden;
 }
 
-input, textarea{
-	background: rgba(255, 255, 255, 0.8);
-	border: none;
+.face {
+	background: url(../img/face-logo.svg) no-repeat;
+	background-size: cover;
+	height: 50px;
+	text-indent: -9999px;
+	width: 50px;
+}
+
+input, textarea {
+	background: transparent;
+	border: 1px solid $color2;
 	border-radius: 6px;
-	color: $color2; 
+	color: $color1; 
 	display: block;	
 	@include font-size(14);
 	font-family: $bodyFont;
@@ -30,19 +37,38 @@ input, textarea{
 	}	
 }
 
-textarea{
+textarea {
 	height: 180px;
 }
 
-.submit{
-	background: $color1;
-	color: $color2;
+.info-contact {
+	padding: 40px 0;
+
+	div {
+		display: inline-block;
+		text-align: center;
+		vertical-align: top;
+		width: 33%;
+
+		&:last-child{
+			vertical-align: top;
+		}
+	}
+
+	p {
+		color: $color1;
+	}
+}
+
+.submit {
+	background: transparent;
+	border: 1px solid $color2;
+	color: $color1;
 	display: block;
 	margin: 0 auto;
 	
-	&:hover{
+	&:hover {
 		background: $color2;
-		border-color: $color2;	
 		color: $color1;
 	}
 }

@@ -1,0 +1,48 @@
+.workshops {
+	h4 { 
+		color: $color2;
+		margin-bottom: 15px;
+	}
+
+	li {
+		@include font-size(18);
+		font-family: $bodyFont;
+		list-style: initial;
+	    margin-left: 20px;
+	}
+
+	p {
+		margin: 0 0 15px;
+	}
+
+	p, li {
+		color: $color3;
+	}
+}
+
+.workshop {
+	border-bottom: 1px solid $color2;
+	padding: 40px;
+	vertical-align: top;
+
+	@media (min-width: 640px) {
+		border-bottom: none;
+		display: inline-block;
+		margin-bottom: 60px;
+		padding: 20px 20px;
+		width: 49.33%;	
+
+		&:first-child, &:nth-child(3) {
+			border-right: 1px solid $color2;
+		}	
+	}
+}
+
+.course-info {
+	margin-bottom: 30px;
+
+	p:first-child, p:nth-child(3) {
+		font-weight: bold;
+		margin: 15px 0 0;
+	}
+}

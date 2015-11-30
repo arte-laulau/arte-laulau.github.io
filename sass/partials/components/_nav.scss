@@ -3,6 +3,7 @@
 //
 nav ul li, li a {
 	color: $color1;
+  @include font-size(24);
   font-weight: normal;
   webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -58,21 +59,23 @@ nav ul li:last-child{
 /*
   **DROP-DOWN WORKS
 */
-.menu-works:after{
+.menu-works:after {
   font-family: $mainFont;
   @include font-size(14);
   color: $color1;
   content: '\25bc';
 }
 
-.drop-down{
-  background: rgba(216, 109, 50, 0.9);
+.drop-down {
+  background: $color2;
+  border-bottom: 1px solid $color2;
+  border-right: 1px solid $color2;
   display: none;
   text-align: left;
   width: 100%;  
 
   @media (min-width: 740px) {
-    margin-top: 10px !important;
+    margin-top: 11px !important;
     position: absolute;
     width: 200px;
   }
@@ -84,16 +87,18 @@ nav ul li:last-child{
   margin: 0;
   padding: 20px 15px;
 
-  &:hover{
+  &:hover {
+    background: $color1;
     border-left: 5px solid $color3;
 
-    a{
+    a {
+      color: $color2;
       text-decoration: none;
     }
   }
 }
 
-.extendedWorks{
+.extendedWorks {
     display: block;
     body{
       overflow: hidden;
@@ -104,7 +109,7 @@ nav ul li:last-child{
 /*
   **MENU COLLAPSE
 */
-.menu-collapse{
+.menu-collapse {
   float: right;
   overflow: hidden;
   margin: 5px 10px;
@@ -155,7 +160,7 @@ nav ul li:last-child{
   width: 100%;
 }
 
-.extended{
+.extended {
   -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
@@ -165,7 +170,7 @@ nav ul li:last-child{
   }
 }
 
-.overlay{
+.overlay {
     background: $color3;
     height: 100%;
     left: 0;
