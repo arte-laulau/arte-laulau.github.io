@@ -64,7 +64,6 @@
     for (var i = 0; i < works.length; i ++) {
       works[i].onclick = function() {
         currentWork = this.id;
-        console.log(currentWork);
         lightboxContent.innerHTML = '<h2>'+data.latest[currentWork].title+'</h2><h4 class="category">'+data.latest[currentWork].category+'</h4><img class="img-project" src="'+data.latest[currentWork].imgWork+'"><h4>Descripción</h4><p>'+data.latest[currentWork].description+'</p>';
         displayProject();        
       }

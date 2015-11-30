@@ -4,7 +4,7 @@
 			"id":0,
 			"nameId":"conel",
 			"title":"Conel",
-			"imgWork":"img/works/ilustraciones/conel.jpg",
+			"imgWork":"img/works/retrato/conel.jpg",
 			"category":"ilustracion",
 			"description":"retrato hecho con acrílico"
 		},				
@@ -12,7 +12,7 @@
 			"id":1,
 			"nameId":"david-paris",
 			"title":"David Paris",
-			"imgWork":"img/works/ilustraciones/david-paris.jpg",
+			"imgWork":"img/works/retrato/david-paris.jpg",
 			"category":"ilustracion",
 			"description":"retrato hecho con acrílico"
 		},	
@@ -20,7 +20,7 @@
 			"id":2,
 			"nameId":"conel",
 			"title":"Conel",
-			"imgWork":"img/works/ilustraciones/conel.jpg",
+			"imgWork":"img/works/retrato/conel.jpg",
 			"category":"ilustracion",
 			"description":"retrato hecho con acrílico"
 		},				
@@ -63,7 +63,7 @@
 			"id":1,
 			"nameId":"conel",
 			"title":"conel",
-			"imgWork":"img/works/ilustraciones/conel.jpg",
+			"imgWork":"img/works/retrato/conel.jpg",
 			"category":"ilustracion",
 			"description":"retrato hecho con acrílico"
 		},
@@ -82,6 +82,190 @@
 			"imgWork":"img/works/ilustraciones/colibri.jpg",
 			"category":"ilustracion",
 			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":4,
+			"nameId":"aRezar",
+			"title":"A rezar",
+			"imgWork":"img/works/ilustraciones/a-rezar.jpg",
+			"category":"ilustracion",
+			"description":"Pintura hecho con acrílico"
+		},
+		{
+			"id":5,
+			"nameId":"caras",
+			"title":"Caras",
+			"imgWork":"img/works/ilustraciones/caras.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":6,
+			"nameId":"chica",
+			"title":"Chica",
+			"imgWork":"img/works/ilustraciones/chica.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":7,
+			"nameId":"cochinitos",
+			"title":"Cochinitos",
+			"imgWork":"img/works/ilustraciones/cochinitos.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":8,
+			"nameId":"boca-1",
+			"title":"boca-1",
+			"imgWork":"img/works/ilustraciones/boca-1.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":9,
+			"nameId":"kinky",
+			"title":"Kinky",
+			"imgWork":"img/works/ilustraciones/kinky.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":10,
+			"nameId":"mm",
+			"title":"mm",
+			"imgWork":"img/works/ilustraciones/mm.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":11,
+			"nameId":"orgy",
+			"title":"Orgy",
+			"imgWork":"img/works/ilustraciones/orgy.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":12,
+			"nameId":"peces",
+			"title":"Peces",
+			"imgWork":"img/works/ilustraciones/peces.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":13,
+			"nameId":"pez",
+			"title":"Pez",
+			"imgWork":"img/works/ilustraciones/pez.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":14,
+			"nameId":"pez-rojo",
+			"title":"Pez rojo",
+			"imgWork":"img/works/ilustraciones/pez-rojo.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":15,
+			"nameId":"pez-completo",
+			"title":"Pez completo",
+			"imgWork":"img/works/ilustraciones/pez-completo.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":16,
+			"nameId":"espiritu-rebelde",
+			"title":"Espíritu rebelde",
+			"imgWork":"img/works/ilustraciones/espiritu-rebelde.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":17,
+			"nameId":"grifo",
+			"title":"Grifo",
+			"imgWork":"img/works/ilustraciones/grifo.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":18,
+			"nameId":"headless",
+			"title":"Headless",
+			"imgWork":"img/works/ilustraciones/headless.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":19,
+			"nameId":"letras",
+			"title":"Letras",
+			"imgWork":"img/works/ilustraciones/letras.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":20,
+			"nameId":"maloso",
+			"title":"Maloso",
+			"imgWork":"img/works/ilustraciones/malosos.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":21,
+			"nameId":"monstruo",
+			"title":"Monstruo",
+			"imgWork":"img/works/ilustraciones/monstruo.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":22,
+			"nameId":"monstruo-b",
+			"title":"Monstruo B",
+			"imgWork":"img/works/ilustraciones/monstruo-b.jpg",
+			"category":"ilustracion",
+			"description":"retrato hecho con acrílico"
+		},
+		{
+			"id":23,
+			"nameId":"cuaderno-azul",
+			"title":"Cuaderno azul",
+			"imgWork":"img/works/encuadernado/cuaderno-azul.jpg",
+			"category":"encuadernado",
+			"description":"Encuadernado, hecho con acrílico"
+		},
+		{
+			"id":24,
+			"nameId":"cuaderno-verde",
+			"title":"Cuaderno verde",
+			"imgWork":"img/works/encuadernado/cuaderno-verde.jpg",
+			"category":"encuadernado",
+			"description":"Encuadernado, hecho con acrílico"
+		},
+		{
+			"id":25,
+			"nameId":"dinamita",
+			"title":"Hoy me siento dinamita",
+			"imgWork":"img/works/encuadernado/dinamita.jpg",
+			"category":"encuadernado",
+			"description":"Separador, hecho con acrílico"
+		},
+		{
+			"id":26,
+			"nameId":"no-he-judado-limpio",
+			"title":"Lo sé, nunca he jugado limpio",
+			"imgWork":"img/works/encuadernado/nunca-he-jugado-limpio.jpg",
+			"category":"encuadernado",
+			"description":"Separador, hecho con acrílico"
 		}
 	]
 }
